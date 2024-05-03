@@ -23,6 +23,8 @@ describe("Woo Commerce Hosting",()=>{
         wooCommerce.fastWooCommerceHosting()
         wooCommerce.featuresOnlineStore()
         wooCommerce.wooCommerceHostingPlans()
+        wooCommerce.compareHostingPlans()
+        wooCommerce.compareHostingPlansHeaderandFuter()
 
 })
 })
