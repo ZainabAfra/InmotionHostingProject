@@ -1,0 +1,22 @@
+{
+  "name": "inmotionhostingapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "runtests": "npm run test --"
+  },
+  "author": "Afsar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.8.0",
+    "cypress-xpath": "^2.0.1",
+    "pluginsFile": "cypress/plugins/index.js",
+    "chromeWebSecurity": "false"
+  },
+  
+    "chromeWebSecurity": false
+  
+ 
+}

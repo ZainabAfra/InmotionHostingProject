@@ -1,0 +1,13 @@
+{
+    "AgencyProgram":{
+        "firstName": "Mike",
+        "lastName": "Dabid",
+        "email": "MikeDabid@gmail.com",
+        "phoneNumber":"7894561230",
+        "agencyName": "MikeDabidAgency",
+        "webSite": "https://www.mikedevid.com",
+        "jobTitle": "Colector",
+        "agencyManager":"LKJLKJ:LK",
+        "joinMessage":"I want to join because I love to work"
+    }
+}
