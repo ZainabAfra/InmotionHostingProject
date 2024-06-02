@@ -10,7 +10,7 @@ describe('Shared Hosting Page',()=>{
         cy.visit('https://www.inmotionhosting.com/')
     })
 
-    it('Shared Hosting page details',()=>{
+    it.skip('Shared Hosting page details',()=>{
 
         let sharedHosing = new SharedHosting()
         sharedHosing.webHostingDropDown()

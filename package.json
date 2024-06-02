@@ -5,18 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
-    "runtests": "npm run test --"
+    "runtests": "npm run test --",
+    "cypress-dashboard-run": "npx cypress run --headed --browser chrome --record --key 7208a970-ec93-4ffd-a16d-b99dda8f7ff3"
   },
   "author": "Afsar",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.8.0",
-    "cypress-xpath": "^2.0.1",
-    "pluginsFile": "cypress/plugins/index.js",
-    "chromeWebSecurity": "false"
-  },
-  
-    "chromeWebSecurity": false
-  
- 
+    "pluginsFile": "cypress/plugins/index.js"
+    
+  }
 }

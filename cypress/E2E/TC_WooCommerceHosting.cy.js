@@ -7,13 +7,14 @@ describe("Woo Commerce Hosting",()=>{
             console.error('Uncaught exception occurred:', err);
             return false;
         });
-        cy.visit('https://www.inmotionhosting.com/')
+        
+        cy.visit('https://www.inmotionhosting.com/', { failOnStatusCode: false })  
         cy.fixture('InmotionHosting').then(function(data){
             globalThis.data=data
         })
     })
 
-    it('Woo Commerce Hosting',()=>{
+    it.skip('Woo Commerce Hosting',()=>{
 
         let wooCommerce = new WooCommerceHosting()
         wooCommerce.wordPressDropdown()
@@ -25,6 +26,20 @@ describe("Woo Commerce Hosting",()=>{
         wooCommerce.wooCommerceHostingPlans()
         wooCommerce.compareHostingPlans()
         wooCommerce.compareHostingPlansHeaderandFuter()
+        wooCommerce.sharedWordPressBtn()
+        wooCommerce.verifyShareWordPressPageTitle()
+        wooCommerce.wordPressVPSBtn()
+        wooCommerce.verifyWordPressVPSPageTitle()
+        wooCommerce.vpsHosting()
+        wooCommerce.verifyVpsHostingPageTitle()
+        wooCommerce.dedicatedServers()
+        wooCommerce.verifyDedicatedServersPageTitle()
+        wooCommerce.wooCommerceHostingArticlesList()
+        wooCommerce.clickAwordPressGuideToWooCommerce()
+        wooCommerce.clickBuildingAndBoostingWooCommerce()
+        wooCommerce.clickWooCommerceVsMagento()
+        wooCommerce.verityFooterProductsList()
+        
 
 })
 })

@@ -4,17 +4,17 @@ let activeLinks = 0
 
 export class HomePage
 {
-    Headline="//h2[normalize-space()='Fast, Scalable Solutions for Websites Globally']"
+    Headline=".hero-title.color-neutral-color"
     Deals=".imh-rostrum-card h3"
-    WenHosting='//*[@id="home-rostrum-3"]/div/div/div[1]/div[2]/div[1]/a'
+    WenHosting='#webHostingDropDown'
     SharedHostingComPlans='.imh-rostrum-card h3'
     AllServicess='.boldgrid-section.custom-block.features-v4 div ul li a'
 
 
 
-    verifyTitile(){cy.xpath(this.Headline).should('contain.text','Fast, Scalable Solutions for Websites Globally')}
+    verifyTitile(){cy.get(this.Headline).should('contain.text','Fast, Scalable Solutions for Websites Globally')}
     verifyDeals(){cy.get(this.Deals).should('contain.text','Shared Hosting').and('have.length','9')}
-    clickComparePlans(){cy.xpath(this.WenHosting).click({force: true})}
+    clickComparePlans(){cy.get(this.WenHosting).click({force: true})}
     verifyUrl(){cy.url().should('include','shared-hosting')}
     verifyHostingPlans(){cy.get(this.SharedHostingComPlans).should('contain.text','Core').and('have.length','4')}
     verifyAlltheLinks(){cy.get('a').each(($title, index)=>{

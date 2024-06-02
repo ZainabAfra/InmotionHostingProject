@@ -1,0 +1,49 @@
+{
+   "lambdatest_auth": {
+      "username": "afsarfk012",
+      "access_key": "2GAx60tgoLQKB0yK3LaX9OJHlGjZg2kCdEiCQ454TC4OYlwzX4"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+
+      {
+         "browser": "Microsoft edge",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Chrome",
+         "platform": "Windows 11",
+         "versions": [
+            "124.0"
+         ]
+      }
+   ],
+   "run_settings": {
+      "smart_ui": {
+         "project": "InmotionHostingApplication"
+      },
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "cypress-Build2",
+      "parallels": 1,
+      "specs": "cypress/e2e/TC_DedicatedServer.cy.js",
+      "ignore_files": "",
+      "network": false,
+      "headless": true,
+      "npm_dependencies": {
+         "cypress": "^13.8.0"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": "null"
+   }
+}
