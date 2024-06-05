@@ -14,7 +14,7 @@ describe("Woo Commerce Hosting",()=>{
         })
     })
 
-    it.skip('Woo Commerce Hosting',()=>{
+    it('Woo Commerce Hosting',()=>{
 
         let wooCommerce = new WooCommerceHosting()
         wooCommerce.wordPressDropdown()

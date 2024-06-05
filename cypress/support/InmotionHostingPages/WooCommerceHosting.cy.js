@@ -86,7 +86,7 @@ export class WooCommerceHosting
     clickWooCommerceVsMagento(){cy.get(this.WooCommerceVsMagento).invoke('removeAttr','target')
         .click().should('contain','WooCommerce vs Magento').go('back')
     }
-    verityFooterProductsList(){cy.get(this.FooterProductsList).should('contain','Shared Hosting').and('have.length','46')
+    verityFooterProductsList(){cy.get(this.FooterProductsList).should('contain','Shared Hosting').and('have.length','51')
         .each(($FPL, index,$list)=>{
             cy.log($FPL.text())
     })}

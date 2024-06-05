@@ -13,7 +13,7 @@ describe('Word Press Platform',()=>{
         })
     })
 
-    it.skip('Word Press on Platform',()=>{
+    it('Word Press on Platform',()=>{
 
         let wordPressPlan = new WordPressPlatform()
         

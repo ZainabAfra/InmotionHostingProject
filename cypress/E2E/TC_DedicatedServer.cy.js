@@ -29,5 +29,6 @@ it('Dedicated Server',()=>{
     dedicatedSev.dedicatedHostingProductGuide()
     dedicatedSev.cPanelGuides()
     dedicatedSev.footerProductMenuList()
-    
+    dedicatedSev.whmServerManagement()
+    dedicatedSev.migratingWebsiteToInMotionHosting()
 })

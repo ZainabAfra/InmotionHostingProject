@@ -10,7 +10,7 @@ describe('Word Press Hosting',()=>{
         cy.visit('https://www.inmotionhosting.com/')
     })
 
-    it.skip('Word Press Page details',()=>{
+    it('Word Press Page details',()=>{
 
         let wordPress = new WordPressHosting()
         wordPress.wordPressDropdown()
