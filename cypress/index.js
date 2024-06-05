@@ -10,4 +10,4 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 });
 // cypress/support/index.js
-//require('cypress-xpath');
+require('cypress-xpath');

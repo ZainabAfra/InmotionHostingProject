@@ -3,7 +3,8 @@ export class SharedHosting
     WebHosting="#webHostingDropDown"
     ShareHostingPlans=".imh-rostrum-container div h3"
     ShareHostingFeatures=".col-md-4.col-xs-6.col-sm-6.col-lg-4 h3"
-    SharedWebHosting = "//h2[.='Shared Web Hosting Trusted by Thousands']"
+    PageHeadLine=".hero-title.color-neutral-color"
+    
 
 
     webHostingDropDown(){cy.get(this.WebHosting).invoke('show')}
@@ -17,6 +18,6 @@ export class SharedHosting
         .and('have.length','12').each(($features, index, $list)=>{
             cy.log($features.text())
     })}
-    verifyShareWebHosting(){cy.get(this.SharedWebHosting).should('contain.text','Shared Web Hosting Trusted by Thousands')}
+    verifyPageHeadLine(){cy.get(this.PageHeadLine).should('contain.text','Affordable Hosting for Small Businesses and Indivi')}
 
 }

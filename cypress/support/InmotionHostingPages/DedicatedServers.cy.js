@@ -13,6 +13,8 @@ export class DedicatedServer
     DedicatedHostingProductGuideLink="a[href='https://www.inmotionhosting.com/support/product-guides/dedicated-hosting/']"
     CPanelGuidesLink="a[href='https://www.inmotionhosting.com/support/edu/cpanel/']"
     ControlWebPanelGuides="a[href='https://www.inmotionhosting.com/support/edu/control-web-panel/']"
+    WHMServerManagement="a[href='https://www.inmotionhosting.com/support/edu/whm/']"
+    MigratingWebsiteToInMotionHosting="a[href='https://www.inmotionhosting.com/blog/ebooks/migrating-your-website/']"
     FooterProductMenuList=".imh-4-col ul li a"
     SocialMedia=".imh-social span"
 
@@ -66,8 +68,18 @@ export class DedicatedServer
             cy.contains('Control Web Panel (CWP)').should('exist')
                 cy.url('include','/control-web-panel/').go('back')
     }
+    whmServerManagement(){cy.get(this.WHMServerManagement).invoke('removeAttr','target')
+        .click({force: true})
+            cy.contains('WebHost Manager (WHM)').should('exist')
+                cy.url('include','/whm/').go('back')
+    }
+    migratingWebsiteToInMotionHosting(){cy.get(this.MigratingWebsiteToInMotionHosting).invoke('removeAttr','target')
+        .click({force: true})
+            cy.contains('InMotion Hosting Blog').should('exist')
+                cy.url('include','migrating-your-website/').go('back')
+    }
     footerProductMenuList(){cy.get(this.FooterProductMenuList).should('contain.text','Shared Hosting')
-        .and('have.length','49').each(($FPML , index, $list)=>{
+        .and('have.length','51').each(($FPML , index, $list)=>{
             cy.log($FPML.text())
     })}
    
