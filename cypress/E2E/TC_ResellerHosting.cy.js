@@ -20,7 +20,12 @@ describe('Reseller Hosting Page',()=>{
         resellerHosting.resellerHostingPlans()
         resellerHosting.verifyResellerHostingFeatures()
         resellerHosting.verifyResellerHostingBenefits()
-
-
+        resellerHosting.resellerHostingPlansComparisons()
+        resellerHosting.resellerYearsOfPlans()
+        resellerHosting.resellerHostingBestValue()
+        resellerHosting.resellerHostingPrimaryFeatures()
+        resellerHosting.resellerHostingIncludedInAllPlans()
+        resellerHosting.resellerHostingFAQs()
+        
     })
 })
